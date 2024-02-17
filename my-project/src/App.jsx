@@ -13,14 +13,14 @@ const App = () => {
   return (
     <div>
       {data ? (
-        <div className=' flex'>
-          <h1>ETH</h1>
+        <div className=' flex w-{1120px} justify-center'>
+          <h1 className=' w-20 h-20 bg-red-300'>ETH</h1>
           <div className=' w-{500px} p-5 bg-green-300'>
             <h1>BTC: {data.ETH.BTC}</h1>
             <h1>USD: {data.ETH.USD}</h1>
             <h1>EUR: {data.ETH.EUR}</h1>
           </div>
-          <h1>DASH</h1>
+          <h1 className=' w-20 h-20 bg-amber-400 ml-8'>DASH</h1>
           <div className=' w-{500px}  p-5 bg-amber-500'>
             <h1>BTC: {data.DASH.BTC}</h1>
             <h1>USD: {data.DASH.USD}</h1>
